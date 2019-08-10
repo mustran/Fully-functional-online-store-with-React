@@ -4,6 +4,7 @@ import HomePage from './pages/homepage/homepage.component'
 
 function App() {
     return <HomePage />;
+    //check git
 }
 
 export default App;
