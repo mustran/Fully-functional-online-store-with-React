@@ -1,10 +1,19 @@
 import React from "react";
 import "./App.css";
-import HomePage from './pages/homepage/homepage.component'
+import { Route } from "react-router-dom";
+import HomePage from "./pages/homepage/homepage.component";
+
+const HatsPage = () => {
+    return <h1>Hats Page</h1>;
+};
 
 function App() {
-    return <HomePage />;
-    //check git
+    return (
+        <div>
+            <Route exact path="/" component={HomePage} />
+            <Route path="/shop/hats" component={HatsPage} />
+        </div>
+    );
 }
 
 export default App;
